@@ -1,0 +1,33 @@
+name: CI - build & check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build --if-present
+
+      - name: Generate sitemap
+        run: node ./scripts/generate-sitemap.js
+
+      - name: Upload workflow logs
+        run: echo "Build and sitemap generation finished. Check logs for details."
+
+      # Note: This workflow is CI-only and does not deploy. Hosting deployment is handled by Vercel/Netlify.

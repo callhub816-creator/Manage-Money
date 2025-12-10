@@ -1,0 +1,16 @@
+# PLACEHOLDERS: DOMAIN, SITE_NAME, CONTACT_EMAIL, YEAR
+# Allow all crawlers and reference sitemap
+User-agent: *
+Allow: /
+
+# Sitemap reference (required by search engines)
+Sitemap: https://manage-money.online/sitemap.xml
+
+# Crawl-delay (uncomment to use)
+# Crawl-delay: 10
+
+# Example to block a staging subpath (uncomment when needed):
+# User-agent: *
+# Disallow: /staging/
+
+# TODO: Replace the DOMAIN above if different. (Hinglish: staging folder block karna ho to uncomment karein)

@@ -1,0 +1,40 @@
+<!--
+  Head meta partial
+  PLACEHOLDERS: DOMAIN, SITE_NAME, AUTHOR_NAME, CONTACT_EMAIL, YEAR, GA_MEASUREMENT_ID
+  Paste this snippet into your <head> section.
+  (Hinglish notes: placeholders ko replace karein aur og:image ke liye proper image path set karein.)
+-->
+<title>{{ PAGE_TITLE | default: "Manage Money Online" }}</title>
+<meta name="description" content="{{ PAGE_DESCRIPTION | default: 'Free personal finance guides on budgeting, saving, investing and debt management.' }}" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="canonical" href="https://manage-money.online{{ REQUEST_PATH | default: '/' }}" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ PAGE_TITLE | default: 'Manage Money Online' }}" />
+<meta property="og:description" content="{{ PAGE_DESCRIPTION | default: 'Free personal finance guides.' }}" />
+<meta property="og:image" content="https://manage-money.online/og-image.png" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ PAGE_TITLE | default: 'Manage Money Online' }}" />
+<meta name="twitter:description" content="{{ PAGE_DESCRIPTION | default: 'Free personal finance guides.' }}" />
+<meta name="twitter:image" content="https://manage-money.online/og-image.png" />
+
+<!-- Icons & Manifest -->
+<link rel="icon" href="/favicon.svg" />
+<link rel="manifest" href="/manifest.json" />
+
+<!-- Structured Data (Organization) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Manage Money Online",
+  "url": "https://manage-money.online",
+  "logo": "https://manage-money.online/favicon.svg",
+  "contactPoint": [{ "@type": "ContactPoint", "email": "hello@manage-money.online", "contactType": "customer support" }]
+}
+</script>
+
+<!-- TODO: Replace placeholders above with actual values. -->

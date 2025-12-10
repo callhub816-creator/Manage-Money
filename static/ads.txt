@@ -1,0 +1,7 @@
+# PLACEHOLDERS: DOMAIN, SITE_NAME, CONTACT_EMAIL, YEAR
+# ads.txt template — add lines for each advertising system when ready.
+# Format: <ad network domain>, <publisher id>, <relationship>, <cert authority id (optional)>
+# Example (uncomment and replace values):
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+
+# TODO: Add your ad network publisher IDs here. (Hinglish: Ad network details milte hi yahan add karein.)
