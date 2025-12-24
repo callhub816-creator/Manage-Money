@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manage-money.online/sitemap.xml
