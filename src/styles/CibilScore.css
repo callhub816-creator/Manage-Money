@@ -1,0 +1,124 @@
+.cibil-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cibil-check-card {
+    padding: var(--spacing-xl) !important;
+    background: linear-gradient(to right bottom, #ffffff, #f0f9ff);
+}
+
+.score-table-wrapper {
+    overflow-x: auto;
+}
+
+.score-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing-sm);
+}
+
+.score-table th,
+.score-table td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.score-table th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.bg-success-light {
+    background-color: #dcfce7;
+}
+
+.bg-danger-light {
+    background-color: #fee2e2;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+}
+
+.icon-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-list li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.95rem;
+}
+
+.improvement-card {
+    background: linear-gradient(135deg, var(--primary) 0%, #1e40af 100%);
+    color: white;
+}
+
+.improvement-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.improvement-text h3 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: var(--spacing-xs);
+}
+
+.improvement-text p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+.improvement-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.improvement-actions .btn-outline {
+    border-color: white;
+    color: white;
+}
+
+.improvement-actions .btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-grid-inline {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: var(--spacing-md);
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .grid-2-col {
+        grid-template-columns: 1fr;
+    }
+
+    .improvement-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-grid-inline {
+        grid-template-columns: 1fr;
+    }
+}

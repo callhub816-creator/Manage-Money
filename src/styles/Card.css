@@ -1,0 +1,52 @@
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    /* Consistent padding */
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    /* Contains potential spills */
+    height: 100%;
+    /* Ensure equal height in grids */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Enhanced Hover for Interactive Cards */
+.card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: #cfd3d9;
+}
+
+/* Card Typography */
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-content {
+    color: var(--text-light);
+    flex-grow: 1;
+    /* Pushes footer to bottom */
+}
+
+/* Accent Borders */
+.highlight-border {
+    border-top: 4px solid var(--primary);
+}
+
+/* Mobile Optimization */
+@media (max-width: 640px) {
+    .card {
+        padding: var(--spacing-md);
+        /* Slightly less padding on mobile */
+    }
+}

@@ -1,0 +1,138 @@
+:root {
+  /* Colors - Financial Blue Theme */
+  --primary: #0052cc;
+  /* Professional Blue */
+  --primary-dark: #0747a6;
+  --secondary: #172b4d;
+  /* Dark Navy for Text/Secondary */
+  --accent: #36b37e;
+  /* Growth Green */
+  --background: #f4f5f7;
+  /* Light Gray Background */
+  --surface: #ffffff;
+  --text-main: #172b4d;
+  --text-light: #505f79;
+  --text-muted: #6b778c;
+  --border: #dfe1e6;
+  --danger: #ff5630;
+
+  /* Spacing System */
+  --spacing-2xs: 0.25rem;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Elevation / Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(9, 30, 66, 0.05);
+  --shadow-md: 0 4px 8px -2px rgba(9, 30, 66, 0.1), 0 0 1px rgba(9, 30, 66, 0.1);
+  --shadow-lg: 0 10px 20px -5px rgba(9, 30, 66, 0.15), 0 0 1px rgba(9, 30, 66, 0.1);
+
+  /* Layout */
+  --container-width: 1200px;
+  --header-height: 70px;
+  /* Slightly taller for mobile tap ease */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  /* Base font size for readability */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--secondary);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: var(--spacing-sm);
+}
+
+h1 {
+  font-size: 2.25rem;
+  letter-spacing: -0.01em;
+}
+
+/* Mobile first: 2rem -> 2.25rem */
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  color: var(--text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* Utilities */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  width: 100%;
+}
+
+/* Button & Card Global Resets if needed */
+.section {
+  padding: var(--spacing-2xl) 0;
+}
+
+/* Mobile Typography Overrides */
+@media (max-width: 768px) {
+  :root {
+    --spacing-2xl: 2rem;
+    --spacing-3xl: 3rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}

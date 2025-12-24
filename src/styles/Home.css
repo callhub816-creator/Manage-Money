@@ -1,0 +1,164 @@
+/* Hero Section - Polished */
+.hero-section {
+    padding: var(--spacing-3xl) var(--spacing-md);
+    background: linear-gradient(135deg, #eff6ff 0%, #e0f2fe 100%);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    /* Larger impact */
+    color: var(--secondary);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: var(--spacing-xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.hero-cta-group {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    min-width: 200px;
+}
+
+/* Quick Actions - Better Grid */
+.quick-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.action-card {
+    height: 100%;
+    text-align: center;
+    padding: var(--spacing-xl);
+}
+
+.hover-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.icon-box {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+    /* Colors handled by utility classes in JSX or separate list */
+}
+
+/* Colors for Icons */
+.bg-blue-100 {
+    background-color: #dbeafe;
+}
+
+.bg-green-100 {
+    background-color: #dcfce7;
+}
+
+.bg-purple-100 {
+    background-color: #f3e8ff;
+}
+
+.bg-orange-100 {
+    background-color: #ffedd5;
+}
+
+.action-card h3 {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.25rem;
+}
+
+.action-card p {
+    color: var(--text-light);
+    margin-bottom: var(--spacing-lg);
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+.text-link {
+    color: var(--primary);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.95rem;
+}
+
+/* Explore Finance */
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.explore-card {
+    padding: var(--spacing-lg);
+}
+
+.flex-row-center {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    gap: var(--spacing-md);
+}
+
+.explore-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-2xs);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.25rem;
+    }
+
+    .hero-section {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
+
+    .action-card {
+        padding: var(--spacing-lg);
+        /* Reduce padding on mobile */
+    }
+
+    .flex-row-center {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .explore-card .btn {
+        width: 100%;
+    }
+}

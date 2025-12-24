@@ -1,0 +1,236 @@
+/* Header */
+.product-header {
+    margin-bottom: var(--spacing-2xl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grid Layouts */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+
+.card-icon-wrapper {
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-md);
+    background: var(--background);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-desc {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1;
+    line-height: 1.6;
+}
+
+.product-cta {
+    margin-top: auto;
+}
+
+/* Forms */
+.eligibility-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-grid {
+    display: grid;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.select-field {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    background-color: white;
+    appearance: none;
+    /* Custom dropdown */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+.select-field:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.1);
+}
+
+/* Benefits Section */
+.benefits-card {
+    background-color: var(--surface);
+    padding: var(--spacing-2xl) !important;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--spacing-xl);
+    text-align: center;
+}
+
+.benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.benefit-item span {
+    font-weight: 600;
+    color: var(--secondary);
+    font-size: 0.95rem;
+}
+
+/* Popular Cards List */
+.cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.horizontal-card {
+    transition: transform 0.2s;
+    padding: var(--spacing-lg);
+}
+
+.h-card-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.h-card-content h3 {
+    margin-top: 0;
+    margin-bottom: var(--spacing-sm);
+    color: var(--secondary);
+    font-size: 1.35rem;
+}
+
+.product-list-sm {
+    list-style: none;
+    /* Cleaner look */
+    padding: 0;
+    margin: 0;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.product-list-sm li {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-list-sm li::before {
+    content: "•";
+    /* Custom bullet */
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.h-card-actions {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: var(--spacing-sm);
+}
+
+/* Tips Box */
+.tips-box {
+    background-color: #fff;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    border-left: 5px solid var(--accent);
+    box-shadow: var(--shadow-md);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tips-box h3 {
+    margin-top: 0;
+    color: var(--secondary);
+    margin-bottom: var(--spacing-md);
+}
+
+.tips-list {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.tips-list li {
+    margin-bottom: 0.75rem;
+    color: var(--text-main);
+}
+
+/* Utils */
+.text-success {
+    color: #36b37e;
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-accent {
+    color: #ff5630;
+}
+
+.text-secondary {
+    color: #6554c0;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .h-card-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .h-card-actions {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .h-card-actions .btn {
+        flex: 1;
+        min-width: 120px;
+    }
+}
