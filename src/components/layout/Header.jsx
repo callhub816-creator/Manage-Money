@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Menu, X, Coins, ChevronDown } from 'lucide-react';
-import '../styles/Header.css';
+import '../../styles/Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
