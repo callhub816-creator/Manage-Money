@@ -6,8 +6,8 @@ export default defineConfig(({ mode }) => {
   loadEnv(mode, process.cwd(), '');
 
   return {
-    // IMPORTANT: GitHub Pages repo name
-    base: '/Manage-Money/',
+    // IMPORTANT: Custom domain → root path
+    base: '/',
 
     plugins: [react()],
 
