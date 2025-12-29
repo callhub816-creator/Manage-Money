@@ -25,7 +25,7 @@ const Home: React.FC = () => {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-6xl font-extrabold mb-4">Find Your Best Financial Match</h1>
             <p className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto mb-8">
-              Compare credit cards that earn you rewards, loans with fast approval, and insurance plans that protect your family—all in one place.
+              Compare credit cards with real rewards, personal loans from trusted lenders, and insurance plans that protect your family—all in one place.
             </p>
 
             {/* Trust Signals */}
@@ -44,7 +44,7 @@ const Home: React.FC = () => {
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-lg">🛡️</span>
-                <span>RBI-compliant Lenders Only</span>
+                <span>Cards issued by RBI-regulated banks</span>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const Home: React.FC = () => {
               Check Best Credit Cards
             </Link>
             <Link to="/loans/quick-disbursal-loan" className="bg-blue-500 border-2 border-blue-400 px-8 py-4 rounded-lg font-bold hover:bg-blue-400 transition-colors shadow-lg text-center">
-              Explore Fast Loans
+              Explore Personal Loans
             </Link>
           </div>
         </div>
@@ -91,8 +91,8 @@ const Home: React.FC = () => {
               <p className="text-slate-600">We analyze 500+ financial products across interest rates, fees, rewards, and eligibility criteria. Get the real picture, not marketing hype.</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
-              <h3 className="text-xl font-bold mb-4 text-green-600">🔒 Unbiased & Transparent</h3>
-              <p className="text-slate-600">No hidden deals. No affiliate bias. Our job is helping you save money and make informed decisions—not pushing a product.</p>
+              <h3 className="text-xl font-bold mb-4 text-green-600">🔒 Standardized Editorial Review</h3>
+              <p className="text-slate-600">No hidden deals. Products are compared based on objective editorial standards. Affiliate disclosures apply to featured links.</p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
               <h3 className="text-xl font-bold mb-4 text-purple-600">🧮 Smart Tools (Free)</h3>
@@ -131,7 +131,7 @@ const Home: React.FC = () => {
             </div>
             <div className="bg-white p-6 rounded-lg border border-slate-200">
               <h3 className="font-bold text-slate-900 mb-3">How do you choose which products to feature?</h3>
-              <p className="text-slate-600 text-sm">We compare based on RBI-compliant data: interest rates, fees, eligibility, and real user benefits. No fake reviews, no paid rankings.</p>
+              <p className="text-slate-600 text-sm">We compare based on publicly available data from RBI-regulated entities: interest rates, fees, eligibility, and core product benefits. Our ratings are editorial and independent.</p>
             </div>
             <div className="bg-white p-6 rounded-lg border border-slate-200">
               <h3 className="font-bold text-slate-900 mb-3">Can I apply directly?</h3>

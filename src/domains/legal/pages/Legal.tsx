@@ -15,7 +15,7 @@ export const AboutUs: React.FC = () => (
     <SEO title="About Us - ManageMoney" description="Learn about ManageMoney, your trusted finance comparison partner." />
     <p>ManageMoney is a premier financial comparison portal focused on the Indian market. We help users compare various financial products side-by-side to find the best match for their profile.</p>
     <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 my-6">
-      <p><strong>Important Notice:</strong> ManageMoney is <strong>NOT a lender</strong>. We are a comparison platform that facilitates referrals to <strong>RBI-compliant financial institutions</strong>.</p>
+      <p><strong>Important Notice:</strong> ManageMoney is <strong>NOT a lender</strong>. We are a comparison platform that facilitates referrals to <strong>RBI-regulated financial institutions</strong>.</p>
     </div>
     <p>Our mission is to simplify complex financial products like credit cards, personal loans, and insurance for the common man with absolute transparency.</p>
   </PageLayout>
@@ -50,12 +50,44 @@ export const Disclaimer: React.FC = () => (
     <SEO title="Disclaimer - ManageMoney" description="Legal disclosures and risk warnings." />
     <section className="bg-slate-50 p-6 rounded-xl border border-slate-200 mb-8">
       <h2 className="text-xl font-bold text-slate-900 mb-4">Affiliate Disclosure</h2>
-      <p>We may earn a referral commission when you apply through our links. This does not increase your cost. We recommend products based on eligibility, not commission. We only feature RBI-compliant lenders.</p>
+      <p>We may earn a referral commission when you apply through our links. This does not increase your cost. We recommend products based on eligibility, not commission. We only feature RBI-regulated lenders.</p>
     </section>
     <section className="bg-red-50 p-6 rounded-xl border border-red-100 mb-8">
       <h2 className="text-xl font-bold text-red-900 mb-4">Risk Warning</h2>
       <p className="text-red-800">Loans and credit cards carry financial risks. Defaulting can damage your CIBIL score. Always borrow responsibly and only what you can afford to repay.</p>
     </section>
     <p className="text-sm text-slate-500 italic mt-12 border-t pt-4">Last Updated: December 28, 2025</p>
+  </PageLayout>
+);
+
+export const ContactUs: React.FC = () => (
+  <PageLayout title="Contact Us">
+    <SEO title="Contact Us - ManageMoney" description="Get in touch with the ManageMoney team for assistance or queries." />
+    <p>We value your feedback and are here to help with any questions regarding credit cards, loans, or insurance products listed on our platform.</p>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
+      <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <h3 className="text-lg font-bold text-slate-900 mb-2">Email Support</h3>
+        <p className="text-slate-600 mb-4">For general queries and assistance:</p>
+        <a href="mailto:support@manage-money.online" className="text-blue-600 font-bold text-lg hover:underline transition-all">
+          support@manage-money.online
+        </a>
+      </div>
+
+      <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+        <h3 className="text-lg font-bold text-slate-900 mb-2">Business Inquiries</h3>
+        <p className="text-slate-600 mb-4">For partnership or bank integrations:</p>
+        <a href="mailto:admin@manage-money.online" className="text-blue-600 font-bold text-lg hover:underline transition-all">
+          admin@manage-money.online
+        </a>
+      </div>
+    </div>
+
+    <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+      <h3 className="text-lg font-bold text-slate-900 mb-2">Response Time</h3>
+      <p className="text-slate-600 italic leading-relaxed">
+        Our team typically responds to all inquiries within 24-48 business hours. Please include your contact detail if you'd like us to call you back for assistance.
+      </p>
+    </div>
   </PageLayout>
 );

@@ -20,9 +20,9 @@ export const LoanList: React.FC<{ category?: string }> = ({ category = 'quick' }
     { h1: string; seoTitle: string; desc: string }
   > = {
     quick: {
-      h1: 'Personal Loans with Fast Approval',
-      seoTitle: 'Personal Loans Online - Fast Approval in 24 Hours',
-      desc: 'Get fast personal loans up to 50 lakhs with quick approval. Fast disbursement, minimal documentation, 100% online process.',
+      h1: 'Personal Loans with Efficient Approval',
+      seoTitle: 'Personal Loans Online - Compare & Apply Today',
+      desc: 'Compare personal loans up to 50 lakhs with efficient online processes. Minimal documentation and digital verification options.',
     },
     'low-cibil': {
       h1: 'Personal Loans for Low CIBIL Score',
@@ -57,7 +57,7 @@ export const LoanList: React.FC<{ category?: string }> = ({ category = 'quick' }
           </div>
           <div className="mt-6 flex flex-col gap-2 text-xs text-green-100 opacity-90">
             <p className="flex items-center gap-1.5 font-bold">
-              <span className="text-sm">🛡️</span> RBI-compliant Lenders Only
+              <span className="text-sm">🛡️</span> Cards issued by RBI-regulated banks
             </p>
             <p className="italic">
               *Approval subject to lender verification
@@ -79,8 +79,8 @@ export const LoanList: React.FC<{ category?: string }> = ({ category = 'quick' }
               <p className="text-slate-600">Max Processing</p>
             </div>
             <div>
-              <p className="font-bold text-slate-900">100%</p>
-              <p className="text-slate-600">Online Process</p>
+              <p className="font-bold text-slate-900">Fully</p>
+              <p className="text-slate-600">Online Options</p>
             </div>
           </div>
         </div>
@@ -148,16 +148,16 @@ export const LoanList: React.FC<{ category?: string }> = ({ category = 'quick' }
             </div>
           )}
 
-          {/* Secondary Section: Instant Loans */}
-          {(activeFilter === 'all' || activeFilter === 'Instant Loan') && (
+          {/* Secondary Section: Digital Loans */}
+          {(activeFilter === 'all' || activeFilter === 'Digital Loan') && (
             <div className="mb-8">
               <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
-                <span className="bg-amber-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">⚠️</span>
-                Instant / Low CIBIL Loans (Secondary Section)
+                <span className="bg-amber-500 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">💡</span>
+                Digital / Alternative Credit Loans (Secondary Section)
               </h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredLoans
-                  .filter((loan) => loan.category === 'Instant Loan')
+                  .filter((loan) => loan.category === 'Digital Loan')
                   .map((loan, idx) => (
                     <LoanItem key={idx} {...loan} />
                   ))}

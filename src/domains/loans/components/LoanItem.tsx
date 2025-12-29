@@ -16,8 +16,7 @@ interface LoanItemProps {
     minIncome: string;
     minCIBIL: number;
   };
-  rating: number;
-  reviews: number;
+  editorialRating: number;
 }
 
 const LoanItem: React.FC<LoanItemProps> = ({
@@ -30,8 +29,7 @@ const LoanItem: React.FC<LoanItemProps> = ({
   approvalTime,
   keyFeatures,
   eligibility,
-  rating,
-  reviews,
+  editorialRating,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -61,10 +59,12 @@ const LoanItem: React.FC<LoanItemProps> = ({
           <p className="text-slate-500 font-medium">{provider}</p>
         </div>
         <div className="text-right">
-          <div className="flex items-center gap-1 mb-1">
-            <span className="text-yellow-400">★</span>
-            <span className="font-bold text-slate-900">{rating}</span>
-            <span className="text-xs text-slate-500">({reviews}+)</span>
+          <div className="flex flex-col items-end">
+            <div className="flex items-center gap-1 mb-1">
+              <span className="text-yellow-400">★</span>
+              <span className="font-bold text-slate-900">{editorialRating}</span>
+            </div>
+            <span className="text-[10px] text-slate-500 font-medium italic">Editorial Score</span>
           </div>
         </div>
       </div>

@@ -18,11 +18,11 @@ export const INSURANCE_CONFIGS = {
   car: {
     h1: 'Car Insurance - Comprehensive & Third Party',
     seoTitle: 'Car Insurance India - Renew or Buy Best Car Policy',
-    desc: 'Save up to 70% on car insurance renewal. Compare zero-depreciation plans and add-ons like engine protect and RSA.',
+    desc: 'Compare and save on car insurance renewal. Compare zero-depreciation plans and add-ons like engine protect and RSA.',
   },
   bike: {
     h1: 'Quick Two Wheeler Insurance Online',
     seoTitle: 'Bike Insurance India - Quick Renewal & Low Premium',
-    desc: 'Protect your scooter or motorcycle with fast bike insurance. Zero documentation, fast policy delivery, and cashless repairs.',
+    desc: 'Protect your scooter or motorcycle with fast bike insurance. Minimal documentation, digital policy delivery, and cashless repairs.',
   },
 };

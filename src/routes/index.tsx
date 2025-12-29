@@ -7,7 +7,7 @@ import { LoanList } from '../domains/loans';
 import { InsuranceList, InsuranceOverview } from '../domains/insurance';
 import { Home } from '../domains/home';
 import { Tools } from '../domains/tools';
-import { AboutUs, PrivacyPolicy, TermsConditions, Disclaimer } from '../domains/legal';
+import { AboutUs, ContactUs, PrivacyPolicy, TermsConditions, Disclaimer } from '../domains/legal';
 
 /**
  * Centralized routing configuration for all 20 routes
@@ -41,6 +41,7 @@ export const AppRoutes = (
     <Route path="/cibil-score" element={<CibilScore />} />
     <Route path="/tools" element={<Tools />} />
     <Route path="/about-us" element={<AboutUs />} />
+    <Route path="/contact-us" element={<ContactUs />} />
     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
     <Route path="/terms-conditions" element={<TermsConditions />} />
     <Route path="/disclaimer" element={<Disclaimer />} />

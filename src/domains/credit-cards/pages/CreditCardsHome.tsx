@@ -65,7 +65,7 @@ export const CreditCardList: React.FC<{ category?: string }> = ({ category = 'be
           </button>
           <div className="mt-6 flex flex-col gap-2 text-xs text-blue-100 opacity-90">
             <p className="flex items-center gap-1.5 font-bold">
-              <span className="text-sm">🛡️</span> RBI-compliant Banks Only
+              <span className="text-sm">🛡️</span> Cards issued by RBI-regulated banks
             </p>
             <p className="italic">
               *Approval subject to lender verification
@@ -86,7 +86,7 @@ export const CreditCardList: React.FC<{ category?: string }> = ({ category = 'be
             onFilterChange={setActiveFilter}
           />
           <p className="text-xs text-slate-500 text-center mt-4 italic">
-            Low Income cards are entry-level credit cards that may be accessible with ₹15,000+ monthly income. Benefits may be limited.
+            Low income cards are designed for first-time or entry-level applicants. Eligibility criteria vary by bank and approval is not guaranteed.
           </p>
         </div>
       </section>
@@ -125,8 +125,7 @@ export const CreditCardList: React.FC<{ category?: string }> = ({ category = 'be
                 bank={card.bank}
                 annualFee={card.annualFee}
                 keyBenefits={card.keyBenefits}
-                rating={card.rating}
-                reviews={card.reviews}
+                editorialRating={card.editorialRating}
                 category={card.category}
                 minIncome={card.eligibility.minIncome}
               />
@@ -165,7 +164,7 @@ export const CreditCardList: React.FC<{ category?: string }> = ({ category = 'be
               what you can repay. Late payments attract penalties and negatively impact your CIBIL score.
             </p>
             <p>
-              <strong>Eligibility:</strong> All cards listed require RBI-compliant KYC documentation.
+              <strong>Eligibility:</strong> All cards listed require standard KYC documentation as per RBI regulations.
               Approval is subject to the bank's underwriting criteria. The information provided is general
               guidance and should not be considered financial advice. Consult a financial advisor for
               personalized recommendations.

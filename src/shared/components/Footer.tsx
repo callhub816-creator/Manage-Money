@@ -65,6 +65,7 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-semibold mb-4">Support</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/about-us" className="hover:text-blue-400">About Us</Link></li>
+              <li><Link to="/contact-us" className="hover:text-blue-400">Contact Us</Link></li>
               <li><Link to="/privacy-policy" className="hover:text-blue-400">Privacy Policy</Link></li>
               <li><Link to="/terms-conditions" className="hover:text-blue-400">Terms & Conditions</Link></li>
               <li><Link to="/disclaimer" className="hover:text-blue-400">Disclaimer</Link></li>
@@ -73,7 +74,10 @@ const Footer: React.FC = () => {
         </div>
         <div className="border-t border-slate-800 mt-12 pt-8 text-center text-xs">
           <p>&copy; {new Date().getFullYear()} ManageMoney India. All rights reserved.</p>
-          <p className="mt-2 text-slate-500 italic">Financial products are subject to market risks. Please read documents carefully before applying.</p>
+          <div className="mt-4 space-y-2 max-w-2xl mx-auto text-slate-500 italic">
+            <p><strong>Affiliate Disclosure:</strong> ManageMoney is an independent comparison platform. We may receive compensation from the banks and issuers featured on this site for refers made through our links. This does not impact the cost to you.</p>
+            <p>Financial products are subject to market risks and lender approval. Please read official offer documents carefully before applying. ManageMoney is not a lender or credit provider.</p>
+          </div>
         </div>
       </div>
     </footer>

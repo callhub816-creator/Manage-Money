@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CreditCardCTA from './CreditCardCTA';
+import IllustratedCard from './IllustratedCard';
 
 interface CardGridItemProps {
   slug: string;
@@ -8,8 +9,7 @@ interface CardGridItemProps {
   bank: string;
   annualFee: string;
   keyBenefits: string[];
-  rating: number;
-  reviews: number;
+  editorialRating: number;
   category: string;
   minIncome: string;
 }
@@ -29,8 +29,7 @@ const CardGridItem: React.FC<CardGridItemProps> = ({
   bank,
   annualFee,
   keyBenefits,
-  rating,
-  reviews,
+  editorialRating,
   category,
   minIncome,
 }) => {
@@ -45,23 +44,7 @@ const CardGridItem: React.FC<CardGridItemProps> = ({
     navigate(`/credit-cards/${slug}`);
   };
 
-  const isEntryLevel = parseInt(minIncome.replace(/[^0-9]/g, '')) <= 15000;
-
-  // Muted per-bank accent color (~12-16% intensity)
-  const getBankColor = (bankName: string) => {
-    const b = bankName.toLowerCase();
-    if (b.includes('hdfc')) return 'bg-blue-100';
-    if (b.includes('axis')) return 'bg-rose-100';
-    if (b.includes('sbi') || b.includes('state bank')) return 'bg-cyan-100';
-    if (b.includes('idfc')) return 'bg-red-100';
-    if (b.includes('au ')) return 'bg-orange-100';
-    if (b.includes('icici')) return 'bg-sky-100';
-    if (b.includes('kotak')) return 'bg-red-100';
-    if (b.includes('amex') || b.includes('american express')) return 'bg-emerald-100';
-    return 'bg-slate-100';
-  };
-
-  const bankColorClass = getBankColor(bank);
+  const isEntryLevel = minIncome === 'Entry-level';
 
   return (
     <div
@@ -69,23 +52,27 @@ const CardGridItem: React.FC<CardGridItemProps> = ({
       className="bg-white border border-slate-100 rounded-xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.15)] hover:border-blue-200 transition-all duration-300 cursor-pointer overflow-hidden group relative"
     >
       {/* Card Icon Container */}
-      <div className={`relative h-48 ${bankColorClass} overflow-hidden flex items-center justify-center p-8 transition-colors duration-300`}>
-        <img
-          src="/icons/credit-card.svg"
-          alt={`${name} - ${bank}`}
-          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 opacity-90"
-        />
+      <div className="relative h-56 bg-slate-50 overflow-hidden flex flex-col items-center justify-center p-8 transition-colors duration-300">
+        <div className="w-full h-full flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
+          <IllustratedCard bank={bank} name={name} />
+        </div>
+        <p className="text-[10px] text-slate-400 mt-4 text-center leading-tight px-4 transition-opacity">
+          Illustrative card design. Actual card appearance, features, and benefits are determined by the issuing bank.
+        </p>
       </div>
 
       {/* Card Content */}
       <div className="p-5 md:p-6">
+        <p className="text-[9px] text-slate-400 mb-4 block md:hidden italic leading-tight">
+          *Illustrative design. Actual card appearance varies.
+        </p>
         {isEntryLevel && (
           <div className="mb-3 space-y-1">
             <div className="inline-block bg-slate-100 text-slate-600 px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider border border-slate-200">
               Entry-level card
             </div>
             <div className="text-[10px] text-orange-600 font-bold italic leading-tight">
-              *May have higher interest rates and limited rewards.
+              *Approval depends on bank verification.
             </div>
           </div>
         )}
@@ -104,18 +91,18 @@ const CardGridItem: React.FC<CardGridItemProps> = ({
               {[...Array(5)].map((_, i) => (
                 <span
                   key={i}
-                  className={`text-sm ${i < Math.floor(rating) ? 'text-yellow-400' : 'text-slate-300'}`}
+                  className={`text-sm ${i < Math.floor(editorialRating) ? 'text-slate-400' : 'text-slate-200'}`}
                 >
                   ★
                 </span>
               ))}
             </div>
-            <span className="text-xs text-slate-600">
-              {rating} ({reviews}+ reviews)
+            <span className="text-xs text-slate-600 font-bold uppercase tracking-tight">
+              Editorial Score: {editorialRating}/5
             </span>
           </div>
-          <p className="text-[10px] text-slate-400 mt-1">
-            Ratings based on aggregated public data and user feedback.
+          <p className="text-[10px] text-slate-400 mt-1 italic">
+            *Independent assessment based on product benefits.
           </p>
         </div>
 

@@ -11,8 +11,7 @@ export interface CreditCard {
   image: string;
   annualFee: string;
   category: string;
-  rating: number;
-  reviews: number;
+  editorialRating: number;
   keyBenefits: string[];
   eligibility: {
     minAge: number;
@@ -29,8 +28,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     image: 'https://via.placeholder.com/300x180?text=HDFC+Millennia',
     annualFee: '₹1,500 (Waived on ₹1L+ spend)',
     category: 'Cashback',
-    rating: 4.5,
-    reviews: 2840,
+    editorialRating: 4.5,
     keyBenefits: [
       '5% cashback on online shopping',
       '2.5% cashback on dining',
@@ -39,7 +37,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     ],
     eligibility: {
       minAge: 21,
-      minIncome: '₹25,000/month',
+      minIncome: 'Standard',
       minCIBIL: 650,
     },
   },
@@ -50,8 +48,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     image: 'https://via.placeholder.com/300x180?text=HDFC+Regalia+Gold',
     annualFee: '₹2,500 (Waived on ₹4L+ spend)',
     category: 'Travel',
-    rating: 4.8,
-    reviews: 1250,
+    editorialRating: 4.8,
     keyBenefits: [
       'Club Vistara Silver Membership',
       'MMT Black Elite Membership',
@@ -60,7 +57,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     ],
     eligibility: {
       minAge: 21,
-      minIncome: '₹1,00,000/month',
+      minIncome: 'Premium',
       minCIBIL: 720,
     },
   },
@@ -71,8 +68,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     image: 'https://via.placeholder.com/300x180?text=Axis+Ace',
     annualFee: '₹499 (Waived on ₹2L+ spend)',
     category: 'Cashback',
-    rating: 4.4,
-    reviews: 3200,
+    editorialRating: 4.4,
     keyBenefits: [
       '5% cashback on Bill Payments (GPay)',
       '4% cashback on Swiggy, Zomato, Ola',
@@ -81,7 +77,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     ],
     eligibility: {
       minAge: 21,
-      minIncome: '₹20,000/month',
+      minIncome: 'Standard',
       minCIBIL: 700,
     },
   },
@@ -92,8 +88,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     image: 'https://via.placeholder.com/300x180?text=SBI+Cashback',
     annualFee: '₹999 + GST (Waived on ₹2L+ spend)',
     category: 'Cashback',
-    rating: 4.2,
-    reviews: 1950,
+    editorialRating: 4.2,
     keyBenefits: [
       '5% cashback on all online spends',
       '1% cashback on all offline spends',
@@ -102,7 +97,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     ],
     eligibility: {
       minAge: 21,
-      minIncome: '₹25,000/month',
+      minIncome: 'Standard',
       minCIBIL: 700,
     },
   },
@@ -113,8 +108,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     image: 'https://via.placeholder.com/300x180?text=IDFC+WOW',
     annualFee: 'Lifetime Free',
     category: 'Lifetime Free',
-    rating: 4.5,
-    reviews: 850,
+    editorialRating: 4.5,
     keyBenefits: [
       'Secured card against Fixed Deposit',
       'No income proof required',
@@ -123,7 +117,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     ],
     eligibility: {
       minAge: 18,
-      minIncome: '₹0 (Against FD)',
+      minIncome: 'Secured (Against FD)',
       minCIBIL: 300,
     },
   },
@@ -134,8 +128,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     image: 'https://via.placeholder.com/300x180?text=Axis+Airtel',
     annualFee: '₹500 (Waived on ₹2L+ spend)',
     category: 'Cashback',
-    rating: 4.6,
-    reviews: 1100,
+    editorialRating: 4.6,
     keyBenefits: [
       '25% cashback on Airtel bills',
       '10% cashback on BigBasket, Zomato, Swiggy',
@@ -144,7 +137,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     ],
     eligibility: {
       minAge: 21,
-      minIncome: '₹25,000/month',
+      minIncome: 'Standard',
       minCIBIL: 720,
     },
   },
@@ -155,8 +148,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     image: 'https://via.placeholder.com/300x180?text=AU+LIT',
     annualFee: 'Lifetime Free',
     category: 'Lifetime Free',
-    rating: 4.3,
-    reviews: 920,
+    editorialRating: 4.3,
     keyBenefits: [
       'Customizable features - pay as you use',
       'Earn 5% cashback on dining & travel',
@@ -165,7 +157,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     ],
     eligibility: {
       minAge: 21,
-      minIncome: '₹15,000/month',
+      minIncome: 'Entry-level',
       minCIBIL: 650,
     },
   },
@@ -176,8 +168,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     image: 'https://via.placeholder.com/300x180?text=SBI+SimplyClick',
     annualFee: '₹499 + GST',
     category: 'Low Income',
-    rating: 4.1,
-    reviews: 1540,
+    editorialRating: 4.1,
     keyBenefits: [
       '10X reward points on online partners',
       '5X reward points on all other online spends',
@@ -186,7 +177,7 @@ export const CREDIT_CARDS: CreditCard[] = [
     ],
     eligibility: {
       minAge: 21,
-      minIncome: '₹15,000/month',
+      minIncome: 'Entry-level',
       minCIBIL: 650,
     },
   },
@@ -195,7 +186,7 @@ export const CREDIT_CARDS: CreditCard[] = [
 export const CREDIT_CARD_FAQ = [
   {
     question: 'How do I apply for a credit card?',
-    answer: 'Click Apply Now on any card you like. You will be redirected to the bank official application page where you can complete the process in 5-10 minutes. You will need basic info like PAN, Aadhaar, income proof, and employment details.',
+    answer: 'Click Apply Now on any card you like. You will be redirected to the bank’s official website to submit an online application. Submission time and approval timelines vary by lender. You will need basic info like PAN, Aadhaar, income proof, and employment details.',
   },
   {
     question: 'What is CIBIL score and why does it matter?',
@@ -203,7 +194,7 @@ export const CREDIT_CARD_FAQ = [
   },
   {
     question: 'Can I get approved for a credit card with low income?',
-    answer: 'Yes! Our comparison includes beginner-friendly cards with minimum income requirements starting from ₹15,000 per month. Some banks also offer secured credit cards against fixed deposits if your income is lower or your CIBIL score needs improvement.',
+    answer: 'Yes! Our comparison includes beginner-friendly cards with entry-level income requirements. Some banks also offer secured credit cards against fixed deposits if your income is lower or your CIBIL score needs improvement.',
   },
   {
     question: 'How long does approval take?',

@@ -46,10 +46,10 @@ const EligibilityChecker: React.FC<EligibilityCheckerProps> = ({ onSubmit }) => 
 
   return (
     <div className="bg-white border border-slate-200 rounded-xl p-8 max-w-2xl mx-auto">
-      <h3 className="text-2xl font-bold text-slate-900 mb-2">Fast Eligibility Check</h3>
-      <p className="text-slate-600 mb-2">See if you qualify for a personal loan in 30 seconds</p>
+      <h3 className="text-2xl font-bold text-slate-900 mb-2">Preliminary Eligibility Assessment</h3>
+      <p className="text-slate-600 mb-2">Check your preliminary eligibility for personal loans based on basic criteria</p>
       <div className="flex items-center gap-1.5 text-[10px] text-green-700 font-bold mb-6 bg-green-50 px-2 py-1 rounded w-fit">
-        <span>🛡️</span> Featured Lenders are RBI-compliant
+        <span>🛡️</span> Featured Lenders are RBI-regulated
       </div>
 
       <div className="space-y-4 mb-6">
@@ -147,13 +147,14 @@ const EligibilityChecker: React.FC<EligibilityCheckerProps> = ({ onSubmit }) => 
           {(result === 'eligible' || result === 'likely') && (
             <div className="bg-slate-800 text-white p-6 rounded-xl text-center shadow-lg transform transition-all animate-in fade-in slide-in-from-bottom-4">
               <p className="text-slate-400 text-[10px] uppercase tracking-wider font-bold mb-2">Indicative only. Not a loan offer.</p>
-              <p className="text-3xl md:text-4xl font-black text-green-400">
+              <p className="text-sm text-slate-300 mb-1">Potential Loan Range:</p>
+              <p className="text-2xl md:text-3xl font-black text-green-400">
                 ₹{result === 'eligible' ?
-                  `${(parseInt(formData.monthlyIncome) * 10).toLocaleString()} – ${(parseInt(formData.monthlyIncome) * 25).toLocaleString()}` :
-                  `${(parseInt(formData.monthlyIncome) * 5).toLocaleString()} – ${(parseInt(formData.monthlyIncome) * 12).toLocaleString()}`
+                  `${(parseInt(formData.monthlyIncome) * 10).toLocaleString()} – ${(parseInt(formData.monthlyIncome) * 20).toLocaleString()}` :
+                  `${(parseInt(formData.monthlyIncome) * 5).toLocaleString()} – ${(parseInt(formData.monthlyIncome) * 10).toLocaleString()}`
                 }
               </p>
-              <p className="text-xs text-slate-400 mt-3 font-medium">(Range may vary based on actual documents)</p>
+              <p className="text-[10px] text-slate-400 mt-3 font-medium uppercase">*Actual limit is subject to bank assessment of documents and CIBIL score.</p>
             </div>
           )}
         </div>

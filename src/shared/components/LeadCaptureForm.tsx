@@ -145,8 +145,8 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ productType, onSucces
             </div>
 
             <p className="text-[10px] text-slate-500 text-center leading-tight">
-                By submitting, you agree to be contacted regarding this product.
-                Your data is secure and will only be used for application assistance.
+                By submitting, you consent to being contacted by our partner bank or their representative regarding this application.
+                We do not sell your data for unrelated marketing; it is used only for application assistance.
             </p>
         </form>
     );

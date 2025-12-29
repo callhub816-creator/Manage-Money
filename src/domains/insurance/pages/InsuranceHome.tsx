@@ -28,17 +28,17 @@ export const InsuranceList: React.FC<{ category: string }> = ({ category }) => {
           <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
             <h3 className="font-bold text-blue-900 mb-2">Why Compare?</h3>
             <ul className="text-blue-800 text-sm space-y-2">
-              <li>• Save up to 50% on premiums</li>
-              <li>• Access to 5000+ Cashless Hospitals</li>
-              <li>• Quick 30-minute claim settlements</li>
+              <li>• Compare multiple plans side-by-side</li>
+              <li>• Access to extensive Cashless Hospital networks</li>
+              <li>• Guidance on claim settlement processes</li>
             </ul>
           </div>
           <div className="bg-green-50 p-6 rounded-xl border border-green-100">
-            <h3 className="font-bold text-green-900 mb-2">Our Promise</h3>
+            <h3 className="font-bold text-green-900 mb-2">Our Standards</h3>
             <ul className="text-green-800 text-sm space-y-2">
-              <li>• Unbiased expert advice</li>
-              <li>• Dedicated claim assistance</li>
-              <li>• No Spam guarantee</li>
+              <li>• Unbiased comparison tools</li>
+              <li>• Assistance with document preparation</li>
+              <li>• Transparent affiliate disclosure</li>
             </ul>
           </div>
         </div>
@@ -49,7 +49,7 @@ export const InsuranceList: React.FC<{ category: string }> = ({ category }) => {
               onClick={() => setIsModalOpen(true)}
               className="bg-blue-600 text-white text-lg px-10 py-4 rounded-xl font-bold hover:bg-blue-700 shadow-lg transition-transform hover:-translate-y-1"
             >
-              View Plans & Check Prices
+              Compare Plans & Check Prices
             </button>
           ) : (
             <button
@@ -61,11 +61,11 @@ export const InsuranceList: React.FC<{ category: string }> = ({ category }) => {
           )}
 
           <p className="text-[10px] text-slate-400 mt-4 text-center leading-tight">
-            Eligibility, premium rates, and approval depend on your profile. Affiliate disclosure applies.
+            Final premiums and approval depend solely on the insurance provider's underwriting.
           </p>
           <div className="mt-4 flex flex-col gap-1 text-[10px] text-slate-500 items-center opacity-80">
-            <p className="font-bold flex items-center gap-1">🛡️ RBI-compliant Lenders Only</p>
-            <p className="italic">*Approval subject to lender verification</p>
+            <p className="font-bold flex items-center gap-1">🛡️ IRDAI-regulated Insurers Only</p>
+            <p className="italic">*Terms and Conditions apply as per insurer policy</p>
           </div>
 
           {isEnabled && affiliateUrl && (
@@ -76,7 +76,6 @@ export const InsuranceList: React.FC<{ category: string }> = ({ category }) => {
               affiliateUrl={affiliateUrl}
             />
           )}
-          <p className="mt-4 text-xs text-slate-400 italic">Trusted by over 1 Million Indians.</p>
         </div>
       </div>
     </div>

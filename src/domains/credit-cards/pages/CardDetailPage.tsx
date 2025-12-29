@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import SEO from '../../../shared/components/SEO';
 import CreditCardCTA from '../components/CreditCardCTA';
 import { CREDIT_CARDS } from '../data/creditCards';
+import IllustratedCard from '../components/IllustratedCard';
 
 /**
  * CardDetailPage Component
@@ -75,13 +76,11 @@ const CardDetailPage: React.FC = () => {
           {/* Header Section */}
           <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-              {/* Card Icon */}
-              <div className="md:col-span-1 flex justify-center bg-slate-50 rounded-lg p-6 border border-slate-100">
-                <img
-                  src="/icons/credit-card.svg"
-                  alt="Credit Card Icon"
-                  className="w-full max-w-xs h-auto object-contain rounded-lg shadow-sm"
-                />
+              <div className="md:col-span-1 flex flex-col items-center bg-slate-50 rounded-lg p-6 border border-slate-100">
+                <IllustratedCard bank={card.bank} name={card.name} />
+                <p className="text-[10px] text-slate-400 mt-4 text-center leading-tight">
+                  Illustrative card design. Actual card appearance, features, and benefits are determined by the issuing bank.
+                </p>
               </div>
 
               {/* Card Info */}
@@ -92,26 +91,28 @@ const CardDetailPage: React.FC = () => {
                 <p className="text-lg text-slate-600 mb-4">{card.bank}</p>
 
                 {/* Rating */}
-                <div className="flex items-center gap-4 mb-6 pb-6 border-b border-slate-200">
+                <div className="flex flex-col mb-6 pb-6 border-b border-slate-200">
                   <div className="flex items-center gap-2">
                     <div className="flex gap-0.5">
                       {[...Array(5)].map((_, i) => (
                         <span
                           key={i}
-                          className={`text-lg ${i < Math.floor(card.rating)
-                            ? 'text-yellow-400'
-                            : 'text-slate-300'
+                          className={`text-base ${i < Math.floor(card.editorialRating)
+                            ? 'text-slate-400'
+                            : 'text-slate-200'
                             }`}
                         >
                           ★
                         </span>
                       ))}
                     </div>
-                    <span className="font-bold text-slate-900">{card.rating}</span>
+                    <span className="font-bold text-slate-900">
+                      Editorial Score: {card.editorialRating}/5
+                    </span>
                   </div>
-                  <span className="text-slate-600">
-                    {card.reviews.toLocaleString()} reviews
-                  </span>
+                  <p className="text-[10px] text-slate-400 mt-1 italic">
+                    *Rating is based on our comparison of benefits and fees relative to current market offerings.
+                  </p>
                 </div>
 
                 {/* Key Stats */}

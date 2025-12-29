@@ -48,7 +48,7 @@ const LeadCaptureModal: React.FC<LeadCaptureModalProps> = ({ isOpen, onClose, pr
                             {showThankYou ? 'Verification Successful' : 'Get Personalized Assistance'}
                         </h2>
                         <p className="text-xs text-slate-500">
-                            {showThankYou ? 'Redirecting to official partner...' : `Fast-track your ${productType} application`}
+                            {showThankYou ? 'Redirecting to the official bank application page...' : `You will be redirected to the official bank website after this step.`}
                         </p>
                     </div>
                     <button
@@ -83,8 +83,8 @@ const LeadCaptureModal: React.FC<LeadCaptureModalProps> = ({ isOpen, onClose, pr
                         <>
                             <div className="bg-blue-50 border border-blue-100 rounded-lg p-3 mb-6">
                                 <p className="text-xs text-blue-800 flex items-start gap-2">
-                                    <span className="font-bold">Note:</span>
-                                    <span>Filling this helps us provide better support and ensures higher approval chances.</span>
+                                    <span className="font-bold">Transparency Note:</span>
+                                    <span>ManageMoney is a comparison platform. We provide guidance to help you find the right product. Final approval is solely at the bank's discretion.</span>
                                 </p>
                             </div>
 

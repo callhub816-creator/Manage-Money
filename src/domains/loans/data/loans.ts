@@ -2,7 +2,7 @@
  * Loans Domain - Product Data
  */
 
-export const LOAN_TYPES = ['Bank Loan', 'Instant Loan'];
+export const LOAN_TYPES = ['Bank Loan', 'Digital Loan'];
 
 export const LOANS_DATA = [
   {
@@ -12,10 +12,9 @@ export const LOANS_DATA = [
     interestRate: 'approx. 10.5% p.a.*',
     processingFee: 'Up to 2%',
     maxAmount: 'Up to 40 Lakhs',
-    approvalTime: 'Fast Approval',
+    approvalTime: 'Varies by Profile',
     category: 'Bank Loan',
-    rating: 4.8,
-    reviews: 5200,
+    editorialRating: 4.8,
     keyFeatures: [
       'Tenure: Up to 5 years',
       'Suitable For: Salaried & self-employed individuals',
@@ -23,7 +22,7 @@ export const LOANS_DATA = [
     ],
     eligibility: {
       minAge: 21,
-      minIncome: '₹25,000/month',
+      minIncome: 'Standard',
       minCIBIL: 720,
     },
   },
@@ -34,10 +33,9 @@ export const LOANS_DATA = [
     interestRate: 'approx. 10.75% p.a.*',
     processingFee: '1-2%',
     maxAmount: 'Up to 40 Lakhs',
-    approvalTime: 'Fast Approval',
+    approvalTime: 'Varies by Profile',
     category: 'Bank Loan',
-    rating: 4.7,
-    reviews: 4100,
+    editorialRating: 4.7,
     keyFeatures: [
       'Tenure: Flexible repayment options',
       'Suitable For: Salaried professionals',
@@ -45,7 +43,7 @@ export const LOANS_DATA = [
     ],
     eligibility: {
       minAge: 21,
-      minIncome: '₹25,000/month',
+      minIncome: 'Standard',
       minCIBIL: 700,
     },
   },
@@ -56,10 +54,9 @@ export const LOANS_DATA = [
     interestRate: 'approx. 11% p.a.*',
     processingFee: 'Up to 3%',
     maxAmount: 'Up to 35 Lakhs',
-    approvalTime: 'Fast Approval',
+    approvalTime: 'Varies by Profile',
     category: 'Bank Loan',
-    rating: 4.6,
-    reviews: 3800,
+    editorialRating: 4.6,
     keyFeatures: [
       'Tenure: Up to 6 years',
       'Suitable For: Salaried & self-employed',
@@ -67,7 +64,7 @@ export const LOANS_DATA = [
     ],
     eligibility: {
       minAge: 21,
-      minIncome: '₹20,000/month',
+      minIncome: 'Standard',
       minCIBIL: 680,
     },
   },
@@ -78,10 +75,9 @@ export const LOANS_DATA = [
     interestRate: 'approx. 11% p.a.*',
     processingFee: '1.5-2.5%',
     maxAmount: 'Up to 35 Lakhs',
-    approvalTime: 'Fast Approval',
+    approvalTime: 'Varies by Profile',
     category: 'Bank Loan',
-    rating: 4.6,
-    reviews: 3200,
+    editorialRating: 4.6,
     keyFeatures: [
       'Tenure: Flexible repayment',
       'Suitable For: Salaried & business owners',
@@ -89,21 +85,20 @@ export const LOANS_DATA = [
     ],
     eligibility: {
       minAge: 21,
-      minIncome: '₹20,000/month',
+      minIncome: 'Standard',
       minCIBIL: 680,
     },
   },
   {
     name: 'CASHe Personal Loan',
     provider: 'CASHe (NBFC)',
-    loanType: 'Instant Loan',
+    loanType: 'Digital Loan',
     interestRate: 'Monthly Interest*',
     processingFee: 'Variable',
     maxAmount: 'Up to 4 Lakhs',
-    approvalTime: 'Fast Approval',
-    category: 'Instant Loan',
-    rating: 4.4,
-    reviews: 2650,
+    approvalTime: 'Varies by Profile',
+    category: 'Digital Loan',
+    editorialRating: 4.4,
     keyFeatures: [
       'Loan Type: Short-term personal loan',
       'Suitable For: Limited or low credit history',
@@ -112,21 +107,20 @@ export const LOANS_DATA = [
     ],
     eligibility: {
       minAge: 18,
-      minIncome: '₹12,000/month',
+      minIncome: 'Entry-level',
       minCIBIL: 500,
     },
   },
   {
     name: 'Olyv Personal Loan',
     provider: 'Olyv (SmartCoin)',
-    loanType: 'Instant Loan',
+    loanType: 'Digital Loan',
     interestRate: 'Variable*',
     processingFee: 'Variable',
     maxAmount: 'Up to 5 Lakhs',
-    approvalTime: 'Fast Approval',
-    category: 'Instant Loan',
-    rating: 4.3,
-    reviews: 1840,
+    approvalTime: 'Varies by Profile',
+    category: 'Digital Loan',
+    editorialRating: 4.3,
     keyFeatures: [
       'Loan Type: Instant personal loan',
       'Suitable For: Urgent short-term needs',
@@ -135,14 +129,14 @@ export const LOANS_DATA = [
     ],
     eligibility: {
       minAge: 18,
-      minIncome: '₹15,000/month',
+      minIncome: 'Entry-level',
       minCIBIL: 500,
     },
   },
 ];
 
 export const LOANS_COMPARISON_DATA = [
-  ['Feature', 'Bank Loan (HDFC/Axis)', 'NBFC (Tata/Bajaj)', 'Instant App (CASHe/Olyv)'],
+  ['Feature', 'Bank Loan (HDFC/Axis)', 'NBFC (Tata/Bajaj)', 'Digital App (CASHe/Olyv)'],
   [
     'Interest Rate',
     '10.5% - 15%',
@@ -175,8 +169,8 @@ export const LOANS_FAQ = [
     answer: 'Select a lender and click Apply Now. Fill in the basic lead form. You will be redirected to the official lender page to complete your application with documents like PAN and Aadhaar.',
   },
   {
-    question: 'What is the difference between Bank and Instant loans?',
-    answer: 'Banks offer lower interest rates and higher amounts but require good CIBIL scores. Instant apps (Olyv, CASHe) offer fast approval even with low credit scores but usually at higher interest rates.',
+    question: 'What is the difference between Bank and Digital loans?',
+    answer: 'Banks offer lower interest rates and higher amounts but require good CIBIL scores. Digital apps (Olyv, CASHe) offer an efficient online process even with limited credit history but usually at higher interest rates.',
   },
   {
     question: 'Are these lenders RBI-regulated?',

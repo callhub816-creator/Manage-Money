@@ -38,11 +38,22 @@ const CibilScore: React.FC = () => {
           </ul>
 
           <div className="bg-slate-100 p-8 rounded-xl border border-slate-200 mt-12">
-            <h3 className="text-xl font-bold mb-4">Want to check your score for FREE?</h3>
-            <p className="text-slate-600 mb-6">We've partnered with top Indian credit bureaus to offer you a free monthly credit health check.</p>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 shadow">
-              Check Free Credit Score
-            </button>
+            <h3 className="text-xl font-bold mb-4">How to check your score?</h3>
+            <p className="text-slate-600 mb-6">
+              You can check your CIBIL score for free once a year directly from the official TransUnion CIBIL website.
+              Many banking apps also provide free monthly score updates to their customers.
+            </p>
+            <a
+              href="https://www.cibil.com/freecreditscore/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 shadow transition-colors"
+            >
+              Visit Official CIBIL Site
+            </a>
+            <p className="text-[10px] text-slate-500 mt-4 leading-tight">
+              *Note: We are an independent information portal and are not an official credit bureau.
+            </p>
           </div>
         </section>
       </article>

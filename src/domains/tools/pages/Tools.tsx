@@ -191,10 +191,15 @@ const SipCalculator: React.FC = () => {
         </div>
       </div>
 
-      <button className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg transition-colors">
-        Explore Mutual Fund Options
+      <button
+        onClick={() => window.location.href = '#sip-calculator'}
+        className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg transition-colors"
+      >
+        Calculate Your SIP Goal
       </button>
-      <p className="text-xs text-slate-500 text-center mt-2">Start investing with as low as ₹500/month</p>
+      <p className="text-[10px] text-slate-500 text-center mt-2 leading-tight">
+        *Educational tool only. Mutual fund investments are subject to market risks.
+      </p>
     </div>
   );
 };
@@ -235,10 +240,15 @@ const FdCalculator: React.FC = () => {
         </div>
       </div>
 
-      <button className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-lg transition-colors">
-        Compare Bank FD Rates
+      <button
+        onClick={() => window.location.href = '#fd-calculator'}
+        className="w-full bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 rounded-lg transition-colors"
+      >
+        Calculate FD Returns
       </button>
-      <p className="text-xs text-slate-500 text-center mt-2">Find highest FD rates from trusted banks</p>
+      <p className="text-[10px] text-slate-500 text-center mt-2 leading-tight">
+        *Based on standard bank compounding formulas. Actual rates vary by bank.
+      </p>
     </div>
   );
 };
@@ -281,10 +291,15 @@ const CibilChecker: React.FC = () => {
         </div>
       </div>
 
-      <button className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-lg transition-colors">
-        Get Your Actual CIBIL Score
+      <button
+        onClick={() => window.location.href = '/cibil-score'}
+        className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-lg transition-colors"
+      >
+        Learn How to Improve Your Score
       </button>
-      <p className="text-xs text-slate-500 text-center mt-2">Free detailed report available online at CIBIL.com</p>
+      <p className="text-xs text-slate-500 text-center mt-2 leading-tight">
+        Visit CIBIL.com to download your official credit report once a year for free.
+      </p>
     </div>
   );
 };
