@@ -11,7 +11,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img src="/logo.svg" alt="ManageMoney" className="h-8 w-auto" />
+              <img src="./logo.svg" alt="ManageMoney" className="h-8 w-auto" />
             </Link>
           </div>
 

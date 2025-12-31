@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-6">
-              <img src="/logo.svg" alt="ManageMoney" className="h-7 w-auto brightness-0 invert" />
+              <img src="./logo.svg" alt="ManageMoney" className="h-7 w-auto brightness-0 invert" />
             </div>
             <p className="text-sm leading-relaxed text-slate-400">
               India's leading platform to compare credit cards, loans, and insurance products. Empowering you to make smarter financial decisions.
