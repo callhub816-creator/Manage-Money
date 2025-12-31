@@ -69,42 +69,44 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ productType, onSucces
     };
 
     return (
-        <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1">Full Name</label>
-                <input
-                    required
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Enter your name"
-                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-                />
-            </div>
-
-            <div>
-                <label className="block text-sm font-medium text-slate-700 mb-1">Mobile Number</label>
-                <input
-                    required
-                    type="tel"
-                    name="mobile"
-                    pattern="[0-9]{10}"
-                    value={formData.mobile}
-                    onChange={handleChange}
-                    placeholder="10-digit mobile number"
-                    className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-                />
-            </div>
-
-            <div className="grid grid-cols-2 gap-4">
+        <form onSubmit={handleSubmit} className="space-y-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-1">Annual Income</label>
+                    <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-2">Full Name</label>
+                    <input
+                        required
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="e.g. Rahul Sharma"
+                        className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:bg-white focus:border-blue-500 outline-none transition-all placeholder:text-slate-400 font-medium"
+                    />
+                </div>
+
+                <div>
+                    <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-2">Mobile Number</label>
+                    <input
+                        required
+                        type="tel"
+                        name="mobile"
+                        pattern="[0-9]{10}"
+                        value={formData.mobile}
+                        onChange={handleChange}
+                        placeholder="10-digit number"
+                        className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:bg-white focus:border-blue-500 outline-none transition-all placeholder:text-slate-400 font-medium"
+                    />
+                </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div>
+                    <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-2">Annual Income</label>
                     <select
                         name="income"
                         value={formData.income}
                         onChange={handleChange}
-                        className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all bg-white"
+                        className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:bg-white focus:border-blue-500 outline-none transition-all font-medium appearance-none cursor-pointer"
                     >
                         {INCOME_RANGES.map((range) => (
                             <option key={range} value={range}>{range}</option>
@@ -112,7 +114,7 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ productType, onSucces
                     </select>
                 </div>
                 <div>
-                    <label className="block text-sm font-medium text-slate-700 mb-1">City</label>
+                    <label className="block text-[11px] font-bold text-slate-400 uppercase tracking-widest mb-2">City</label>
                     <input
                         required
                         type="text"
@@ -120,33 +122,52 @@ const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ productType, onSucces
                         value={formData.city}
                         onChange={handleChange}
                         placeholder="e.g. Mumbai"
-                        className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
+                        className="w-full px-5 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:bg-white focus:border-blue-500 outline-none transition-all placeholder:text-slate-400 font-medium"
                     />
                 </div>
             </div>
 
-            {error && <p className="text-red-500 text-sm">{error}</p>}
+            {error && (
+                <div className="flex items-center gap-2 text-red-600 bg-red-50 p-3 rounded-lg border border-red-100 animate-shake">
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-xs font-semibold">{error}</span>
+                </div>
+            )}
 
-            <div className="pt-2">
+            <div className="pt-4">
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg disabled:opacity-50"
+                    className="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 active:scale-[0.98] disabled:opacity-50 flex items-center justify-center gap-2"
                 >
-                    {loading ? 'Submitting...' : 'Continue to Application'}
+                    {loading ? (
+                        <>
+                            <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                            <span>Submitting...</span>
+                        </>
+                    ) : (
+                        <>
+                            <span>Continue to Application</span>
+                            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                            </svg>
+                        </>
+                    )}
                 </button>
                 <button
                     type="button"
                     onClick={onSkip}
-                    className="w-full mt-2 text-slate-500 text-sm font-medium hover:text-slate-700 transition-colors"
+                    className="w-full mt-4 text-slate-400 text-xs font-bold uppercase tracking-widest hover:text-slate-600 transition-colors"
                 >
-                    Skip and Continue directly
+                    Skip and Continue Directly
                 </button>
             </div>
 
-            <p className="text-[10px] text-slate-500 text-center leading-tight">
-                By submitting, you consent to being contacted by our partner bank or their representative regarding this application.
-                We do not sell your data for unrelated marketing; it is used only for application assistance.
+            <p className="text-[10px] text-slate-400 text-center leading-relaxed">
+                We value your privacy. Your data is used strictly for application assistance with our partner banks.
+                By proceeding, you agree to our <a href="#/privacy-policy" className="text-blue-500 hover:underline">Privacy Policy</a>.
             </p>
         </form>
     );

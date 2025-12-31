@@ -41,27 +41,27 @@ const LeadCaptureModal: React.FC<LeadCaptureModalProps> = ({ isOpen, onClose, pr
 
     return (
         <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
-            <div className="bg-white w-full max-w-md rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-300">
-                <div className="p-6 border-b border-slate-100 flex justify-between items-center bg-slate-50">
-                    <div>
-                        <h2 className="text-xl font-bold text-slate-900">
+            <div className="bg-white w-full max-w-lg rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-300">
+                <div className="p-6 md:p-8 border-b border-slate-100 flex justify-between items-start bg-white">
+                    <div className="pr-4">
+                        <h2 className="text-2xl font-extrabold text-slate-900 leading-tight">
                             {showThankYou ? 'Verification Successful' : 'Get Personalized Assistance'}
                         </h2>
-                        <p className="text-xs text-slate-500">
-                            {showThankYou ? 'Redirecting to the official bank application page...' : `You will be redirected to the official bank website after this step.`}
+                        <p className="text-sm text-slate-500 mt-1">
+                            {showThankYou ? 'Redirecting to the official bank application page...' : `Your journey to the right financial product starts here.`}
                         </p>
                     </div>
                     <button
                         onClick={onClose}
-                        className="text-slate-400 hover:text-slate-600 p-2"
+                        className="text-slate-400 hover:text-slate-600 p-2 hover:bg-slate-100 rounded-full transition-colors"
                     >
                         <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                 </div>
 
-                <div className="p-6">
+                <div className="p-6 md:p-8">
                     {showThankYou ? (
                         <div className="py-8 text-center animate-in fade-in slide-in-from-bottom-4 duration-500">
                             <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
