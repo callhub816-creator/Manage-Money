@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
   loadEnv(mode, process.cwd(), '');
 
   return {
-    base: '/',
+    base: './',
     build: {
       outDir: 'docs',
     },
