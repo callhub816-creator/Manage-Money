@@ -51,6 +51,7 @@ const Footer: React.FC = () => {
               <li><Link to="/loans/quick-disbursal-loan" className="hover:text-blue-400">Personal Loans</Link></li>
               <li><Link to="/insurance" className="hover:text-blue-400">Insurance</Link></li>
               <li><Link to="/cibil-score" className="hover:text-blue-400">CIBIL Score</Link></li>
+              <li><Link to="/blog" className="hover:text-blue-400">Financial Blog</Link></li>
             </ul>
           </div>
           <div>

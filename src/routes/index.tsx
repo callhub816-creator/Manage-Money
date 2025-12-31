@@ -8,6 +8,7 @@ import { InsuranceList, InsuranceOverview } from '../domains/insurance';
 import { Home } from '../domains/home';
 import { Tools } from '../domains/tools';
 import { AboutUs, ContactUs, PrivacyPolicy, TermsConditions, Disclaimer } from '../domains/legal';
+import { BlogList, BlogPost } from '../domains/blog';
 
 /**
  * Centralized routing configuration for all 20 routes
@@ -45,6 +46,10 @@ export const AppRoutes = (
     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
     <Route path="/terms-conditions" element={<TermsConditions />} />
     <Route path="/disclaimer" element={<Disclaimer />} />
+
+    {/* Blog */}
+    <Route path="/blog" element={<BlogList />} />
+    <Route path="/blog/:slug" element={<BlogPost />} />
   </>
 );
 

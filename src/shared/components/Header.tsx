@@ -31,6 +31,7 @@ const Header: React.FC = () => {
             <Link to="/insurance" className="text-slate-600 hover:text-blue-600 font-medium">Insurance</Link>
             <Link to="/cibil-score" className="text-slate-600 hover:text-blue-600 font-medium">CIBIL Score</Link>
             <Link to="/tools" className="text-slate-600 hover:text-blue-600 font-medium">Tools</Link>
+            <Link to="/blog" className="text-slate-600 hover:text-blue-600 font-medium font-bold text-blue-600">Blog</Link>
           </nav>
 
           <div className="md:hidden flex items-center">
@@ -52,6 +53,7 @@ const Header: React.FC = () => {
           <Link to="/insurance" className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Insurance</Link>
           <Link to="/cibil-score" className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">CIBIL Score</Link>
           <Link to="/tools" className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-50">Tools</Link>
+          <Link to="/blog" className="block px-3 py-2 rounded-md text-base font-medium text-blue-600 bg-blue-50">Blog</Link>
         </div>
       )}
     </header>
