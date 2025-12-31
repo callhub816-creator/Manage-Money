@@ -17,8 +17,8 @@ const SEO: React.FC<SEOProps> = ({
   title,
   description,
   keywords = "credit cards, loans, insurance, CIBIL score, financial comparison, India",
-  image = "https://managemoney.local/og-image.png",
-  url = "https://managemoney.local"
+  image = "https://manage-money.online/og-image.png",
+  url = "https://manage-money.online"
 }) => {
   const siteName = "ManageMoney";
   const fullTitle = `${title} | ${siteName}`;
@@ -97,7 +97,7 @@ const SEO: React.FC<SEOProps> = ({
       publisher: {
         '@type': 'Organization',
         name: siteName,
-        url: 'https://managemoney.local'
+        url: 'https://manage-money.online'
       }
     };
 
@@ -111,13 +111,13 @@ const SEO: React.FC<SEOProps> = ({
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://managemoney.local'
+          item: 'https://manage-money.online'
         },
         ...pathParts.map((part, index) => ({
           '@type': 'ListItem',
           position: index + 2,
           name: part.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
-          item: `https://managemoney.local/${pathParts.slice(0, index + 1).join('/')}`
+          item: `https://manage-money.online/${pathParts.slice(0, index + 1).join('/')}`
         }))
       ]
     };
