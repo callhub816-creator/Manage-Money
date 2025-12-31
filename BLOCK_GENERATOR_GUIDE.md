@@ -9,7 +9,7 @@ Topic: [Your Topic]
 Target Keywords: [Keyword 1, Keyword 2]
 Language: [English/Hindi/Hinglish]
 Tone: Professional and Helpful
-Action: Write the content in HTML format and append it to `src/data/blogs.json` with a unique ID, slug, and a professional Unsplash image URL."
+Action: Write the content in HTML format and append it to `src/data/blogs.json` with a unique ID, slug, professional Unsplash image URL, and set author as "ManageMoney Editorial Team"."
 ---
 
 ### Why this works:
