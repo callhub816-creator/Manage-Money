@@ -3,7 +3,7 @@
  */
 
 export const SITE_NAME = 'Manage Money India';
-export const SITE_URL = 'https://managemoney.local';
+export const SITE_URL = 'https://manage-money.online';
 export const SITE_LOGO = 'ManageMoney';
 
 export const CREDIT_CARD_FILTERS = ['Lifetime Free', 'Cashback', 'Travel', 'Low Income'];

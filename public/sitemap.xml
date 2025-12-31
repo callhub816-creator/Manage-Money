@@ -2,130 +2,137 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
   <url>
-    <loc>https://managemoney.local/</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
+  <url>
+    <loc>https://manage-money.online/blog</loc>
+    <lastmod>2025-12-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Credit Card Category Pages -->
   <url>
-    <loc>https://managemoney.local/credit-cards/best-credit-cards</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/credit-cards/best-credit-cards</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://managemoney.local/credit-cards/lifetime-free-cards</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/credit-cards/lifetime-free-cards</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://managemoney.local/credit-cards/salary-based-cards</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/credit-cards/salary-based-cards</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://managemoney.local/credit-cards/student-beginner-cards</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/credit-cards/student-beginner-cards</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Individual Credit Cards -->
-  <url><loc>https://managemoney.local/credit-cards/hdfc-millennia-credit-card</loc><priority>0.7</priority></url>
-  <url><loc>https://managemoney.local/credit-cards/hdfc-bank-regalia-gold-credit-card</loc><priority>0.7</priority></url>
-  <url><loc>https://managemoney.local/credit-cards/axis-bank-ace-credit-card</loc><priority>0.7</priority></url>
-  <url><loc>https://managemoney.local/credit-cards/sbi-cashback-credit-card</loc><priority>0.7</priority></url>
-  <url><loc>https://managemoney.local/credit-cards/idfc-first-wow-credit-card</loc><priority>0.7</priority></url>
-  <url><loc>https://managemoney.local/credit-cards/axis-airtel-credit-card</loc><priority>0.7</priority></url>
-  <url><loc>https://managemoney.local/credit-cards/au-lit-credit-card</loc><priority>0.7</priority></url>
-  <url><loc>https://managemoney.local/credit-cards/sbi-simply-click-credit-card</loc><priority>0.7</priority></url>
+  <url><loc>https://manage-money.online/credit-cards/hdfc-millennia-credit-card</loc><priority>0.7</priority></url>
+  <url><loc>https://manage-money.online/credit-cards/hdfc-bank-regalia-gold-credit-card</loc><priority>0.7</priority></url>
+  <url><loc>https://manage-money.online/credit-cards/axis-bank-ace-credit-card</loc><priority>0.7</priority></url>
+  <url><loc>https://manage-money.online/credit-cards/sbi-cashback-credit-card</loc><priority>0.7</priority></url>
+  <url><loc>https://manage-money.online/credit-cards/idfc-first-wow-credit-card</loc><priority>0.7</priority></url>
+  <url><loc>https://manage-money.online/credit-cards/axis-airtel-credit-card</loc><priority>0.7</priority></url>
+  <url><loc>https://manage-money.online/credit-cards/au-lit-credit-card</loc><priority>0.7</priority></url>
+  <url><loc>https://manage-money.online/credit-cards/sbi-simply-click-credit-card</loc><priority>0.7</priority></url>
   
   <!-- Loans -->
   <url>
-    <loc>https://managemoney.local/loans/quick-disbursal-loan</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/loans/quick-disbursal-loan</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://managemoney.local/loans/low-cibil-loan</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/loans/low-cibil-loan</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://managemoney.local/loans/salary-business-loan</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/loans/salary-business-loan</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Insurance -->
   <url>
-    <loc>https://managemoney.local/insurance</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/insurance</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://managemoney.local/insurance/health-insurance</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/insurance/health-insurance</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://managemoney.local/insurance/term-insurance</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/insurance/term-insurance</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://managemoney.local/insurance/car-insurance</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/insurance/car-insurance</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <!-- Tools -->
   <url>
-    <loc>https://managemoney.local/cibil-score</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/cibil-score</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://managemoney.local/tools</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/tools</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- Legal -->
   <url>
-    <loc>https://managemoney.local/about-us</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/about-us</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://managemoney.local/privacy-policy</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/privacy-policy</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://managemoney.local/terms-conditions</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/terms-conditions</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://managemoney.local/disclaimer</loc>
-    <lastmod>2025-12-28</lastmod>
+    <loc>https://manage-money.online/disclaimer</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /node_modules/
-Sitemap: https://managemoney.local/sitemap.xml
+Sitemap: https://manage-money.online/sitemap.xml

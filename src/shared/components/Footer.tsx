@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       '@context': 'https://schema.org',
       '@type': 'Organization',
       name: 'ManageMoney',
-      url: 'https://managemoney.local',
+      url: 'https://manage-money.online',
       description: "India's leading platform to compare credit cards, loans, and insurance products",
       contactPoint: {
         '@type': 'ContactPoint',
